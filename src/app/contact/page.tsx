@@ -66,7 +66,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold">Email</h3>
                 <p className="text-gray-600 text-sm">
-                  info@kalakriti.org
+                thekalakritifoundation@gmail.com
                 </p>
               </div>
             </div>

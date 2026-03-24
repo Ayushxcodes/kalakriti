@@ -48,7 +48,7 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Contact</h3>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
-              <Mail size={16} /> info@kalakriti.org
+              <Mail size={16} /> thekalakritifoundation@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <Phone size={16} /> +91 9755852307, +91 8770647176
