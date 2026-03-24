@@ -14,8 +14,13 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
+          <img
+            src="/favicon_io/favicon-32x32.png"
+            alt="Kalakriti logo"
+            className="w-8 h-8 rounded"
+          />
           <span className="text-xl font-bold tracking-tight">
-            <span className="text-orange-600">Kala</span>kriti
+            The <span className="text-orange-600">Kala</span>kriti
           </span>
         </Link>
 
