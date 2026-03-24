@@ -21,16 +21,16 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <Link href="#about" className="hover:text-orange-600 transition">
+          <Link href="/" className="hover:text-orange-600 transition">
+            Home
+          </Link>
+          <Link href="/about" className="hover:text-orange-600 transition">
             About
           </Link>
-          <Link href="#programs" className="hover:text-orange-600 transition">
-            Programs
-          </Link>
-          <Link href="#events" className="hover:text-orange-600 transition">
+          <Link href="/events" className="hover:text-orange-600 transition">
             Events
           </Link>
-          <Link href="#contact" className="hover:text-orange-600 transition">
+          <Link href="/contact" className="hover:text-orange-600 transition">
             Contact
           </Link>
         </nav>

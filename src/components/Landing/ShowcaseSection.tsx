@@ -26,7 +26,7 @@ export default function ShowcaseSection() {
   );
 
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="w-full py-20">
       <div className="container mx-auto px-6">
 
         {/* Section Title */}

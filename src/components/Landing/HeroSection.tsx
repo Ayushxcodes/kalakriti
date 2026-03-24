@@ -19,10 +19,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-50 via-white to-rose-50">
-      {/* Background Blur Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-orange-300/30 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-rose-300/30 rounded-full blur-3xl" />
+    <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 md:pt-0">
+      {/* Background Blur Elements (moved to global layout) */}
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col-reverse md:flex-row items-center gap-8">
