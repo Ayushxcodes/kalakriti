@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  const router = useRouter();
   const images = [
     "/slide1.jpeg",
     "/slide2.jpeg",
@@ -53,7 +55,7 @@ export default function Hero() {
               transition={{ duration: 1 }}
               className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4"
             >
-              <Button size="lg" className="text-lg px-8 py-6">
+              <Button size="lg" className="text-lg px-8 py-6" onClick={() => router.push('/events')}>
                 Explore Programs
               </Button>
 
@@ -61,6 +63,7 @@ export default function Hero() {
                 size="lg"
                 variant="outline"
                 className="text-lg px-8 py-6 border-orange-500 text-orange-600 hover:bg-orange-50"
+                onClick={() => router.push('/contact')}
               >
                 Join Our Community
               </Button>

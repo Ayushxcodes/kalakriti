@@ -37,9 +37,9 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className="hidden md:block">
-          <Button className="bg-orange-600 hover:bg-orange-700">
-            Join Us
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-orange-600 hover:bg-orange-700">Join Us</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -55,21 +55,22 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-white border-t">
           <div className="flex flex-col px-6 py-4 gap-4 text-sm font-medium">
-            <Link href="#about" onClick={() => setOpen(false)}>
+            <Link href="/" onClick={() => setOpen(false)}>
+              Home
+            </Link>
+            <Link href="/about" onClick={() => setOpen(false)}>
               About
             </Link>
-            <Link href="#programs" onClick={() => setOpen(false)}>
-              Programs
-            </Link>
-            <Link href="#events" onClick={() => setOpen(false)}>
+           
+            <Link href="/events" onClick={() => setOpen(false)}>
               Events
             </Link>
-            <Link href="#contact" onClick={() => setOpen(false)}>
+            <Link href="/contact" onClick={() => setOpen(false)}>
               Contact
             </Link>
-            <Button className="mt-2 bg-orange-600 hover:bg-orange-700">
-              Join Us
-            </Button>
+            <Link href="/contact">
+              <Button className="mt-2 bg-orange-600 hover:bg-orange-700">Join Us</Button>
+            </Link>
           </div>
         </div>
       )}

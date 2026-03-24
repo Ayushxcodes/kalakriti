@@ -51,13 +51,13 @@ export default function Footer() {
               <Mail size={16} /> info@kalakriti.org
             </li>
             <li className="flex items-center gap-2">
-              <Phone size={16} /> +91 98765 43210
+              <Phone size={16} /> +91 9755852307, +91 8770647176
             </li>
           </ul>
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-4">
-            <a href="#" className="hover:text-orange-400">
+            <a href="https://www.instagram.com/the_kalakriti_foundation?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==" className="hover:text-orange-400">
               <Instagram size={18} />
             </a>
             <a href="#" className="hover:text-orange-400">
