@@ -12,7 +12,7 @@ const team = [
   },
   {
     name: "Swaraj dhar Dwivedi",
-    role: "Founder & Director",
+    role: "Co-Founder",
     image: "/co_founder.jpeg",
   },
   {
