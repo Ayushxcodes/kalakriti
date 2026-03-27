@@ -15,6 +15,12 @@ const team = [
     role: "Co-Founder",
     image: "/co_founder.jpeg",
   },
+  
+   {
+    name: "Harsh pandey",
+    role: "President",
+    image: "/member5.jpeg",
+  },
   {
     name: "Amit Shukla",
     role: "Member",
@@ -29,11 +35,6 @@ const team = [
     name: "Arunendra singh chauhan",
     role: "Member",
     image: "/member4.jpeg",
-  },
-   {
-    name: "Harsh pandey",
-    role: "Member",
-    image: "/member5.jpeg",
   },
   {
     name: "Atul upadhyay",
