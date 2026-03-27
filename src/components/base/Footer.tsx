@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Instagram, Facebook, Mail, Phone } from "lucide-react";
+import { Instagram, Facebook, Mail, Phone, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -67,8 +67,11 @@ export default function Footer() {
             <a href="https://www.instagram.com/the_kalakriti_foundation?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==" className="hover:text-orange-400">
               <Instagram size={18} />
             </a>
-            <a href="#" className="hover:text-orange-400">
+            <a href="https://www.facebook.com/share/1AypdM9k8S/" className="hover:text-orange-400">
               <Facebook size={18} />
+            </a>
+            <a href="https://youtube.com/@thekalakritifoundation?si=51JM7uCcSCCo5nic" className="hover:text-orange-400">
+              <Youtube size={18} />
             </a>
           </div>
         </div>
