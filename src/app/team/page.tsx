@@ -11,6 +11,11 @@ const team = [
     image: "/priyanshu.jpeg",
   },
   {
+    name: "Swaraj dhar Dwivedi",
+    role: "Founder & Director",
+    image: "/co_founder.jpeg",
+  },
+  {
     name: "Amit Shukla",
     role: "Member",
     image: "/member2.jpeg",
