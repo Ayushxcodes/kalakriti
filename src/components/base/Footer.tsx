@@ -19,7 +19,7 @@ export default function Footer() {
           />
           <div>
             <h2 className="text-2xl font-bold text-white">
-              The <span className="text-orange-500">Kala</span>kriti
+              The <span className="text-orange-500">Kalakriti</span> Foundation
             </h2>
           <p className="mt-4 text-sm text-gray-400 leading-relaxed">
             Empowering creativity, nurturing young talent, and preserving

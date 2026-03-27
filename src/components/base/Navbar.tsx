@@ -20,7 +20,7 @@ export default function Navbar() {
             className="w-8 h-8 rounded"
           />
           <span className="text-xl font-bold tracking-tight">
-            The <span className="text-orange-600">Kala</span>kriti
+            The <span className="text-orange-600">Kalakriti</span> Foundation
           </span>
         </Link>
 
