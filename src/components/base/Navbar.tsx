@@ -35,6 +35,9 @@ export default function Navbar() {
           <Link href="/events" className="hover:text-orange-600 transition">
             Events
           </Link>
+          <Link href="/poems" className="hover:text-orange-600 transition">
+            Poems
+          </Link>
           <Link href="/team" className="hover:text-orange-600 transition">
             Team
           </Link>
@@ -72,6 +75,9 @@ export default function Navbar() {
            
             <Link href="/events" onClick={() => setOpen(false)}>
               Events
+            </Link>
+            <Link href="/poems" onClick={() => setOpen(false)}>
+              Poems
             </Link>
             <Link href="/team" onClick={() => setOpen(false)}>
               Team
