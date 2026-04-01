@@ -82,22 +82,6 @@ const gallery = [
       "/events/workshops/w45.jpeg",    
     ],
   },
-  {
-    title: "Competitions",
-    images: [
-      "/events/competitions/c1.jpg",
-      "/events/competitions/c2.jpg",
-      "/events/competitions/c3.jpg",
-    ],
-  },
-  {
-    title: "Team Moments",
-    images: [
-      "/events/team/t1.jpg",
-      "/events/team/t2.jpg",
-      "/events/team/t3.jpg",
-    ],
-  },
 ];
 
 export default function EventsGallery() {
