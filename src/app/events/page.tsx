@@ -3,29 +3,101 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const images = [
-  "/events/event1.jpeg",
-  "/events/event2.jpeg",
-  "/events/event3.jpeg",
-  "/events/event4.jpeg",
-  "/events/event5.jpeg",
-  "/events/event6.jpeg",
-  "/events/event7.jpeg",
-  "/events/event8.jpeg",
-  "/events/event9.jpeg",
-  "/events/event10.jpeg",
-  "/events/event11.jpeg",
-  "/events/event12.jpeg",
-  "/events/event13.jpeg",
-  "/events/event14.jpeg",
-  "/events/event15.jpeg",
-  "/events/event16.jpeg",
-  "/events/event17.jpeg",
-  "/events/event18.jpeg",
-  "/events/event19.jpeg",
-  "/events/event20.jpeg",
-  "/events/event21.jpeg",
-  "/events/event22.jpeg",
+const gallery = [
+  {
+    title: "Event Highlights",
+    images: [
+      "/events/event1.jpeg",
+      "/events/event2.jpeg",
+      "/events/event3.jpeg",
+      "/events/event4.jpeg",
+      "/events/event5.jpeg",
+      "/events/event6.jpeg",
+      "/events/event7.jpeg",
+      "/events/event8.jpeg",
+      "/events/event9.jpeg",
+      "/events/event10.jpeg",
+      "/events/event11.jpeg",
+      "/events/event12.jpeg",
+      "/events/event13.jpeg",
+      "/events/event14.jpeg",
+      "/events/event15.jpeg",
+      "/events/event16.jpeg",
+      "/events/event17.jpeg",
+      "/events/event18.jpeg",
+      "/events/event19.jpeg",
+      "/events/event20.jpeg",
+      "/events/event21.jpeg",
+      "/events/event22.jpeg",
+      
+    ],
+  },
+  {
+    title: "workshops",
+    images: [
+      "/events/workshops/w1.jpeg",
+      "/events/workshops/w2.jpeg",
+      "/events/workshops/w3.jpeg",
+      "/events/workshops/w4.jpeg",
+      "/events/workshops/w5.jpeg",
+      "/events/workshops/w6.jpeg",
+      "/events/workshops/w7.jpeg",
+      "/events/workshops/w8.jpeg",
+      "/events/workshops/w9.jpeg",
+      "/events/workshops/w10.jpeg",
+      "/events/workshops/w11.jpeg",
+      "/events/workshops/w12.jpeg",
+      "/events/workshops/w13.jpeg",
+      "/events/workshops/w14.jpeg",
+      "/events/workshops/w15.jpeg",
+      "/events/workshops/w16.jpeg",
+      "/events/workshops/w17.jpeg",
+      "/events/workshops/w18.jpeg",
+      "/events/workshops/w19.jpeg",
+      "/events/workshops/w20.jpeg",
+      "/events/workshops/w21.jpeg",
+      "/events/workshops/w22.jpeg",
+      "/events/workshops/w23.jpeg",
+      "/events/workshops/w24.jpeg",
+      "/events/workshops/w25.jpeg",
+      "/events/workshops/w26.jpeg",
+      "/events/workshops/w27.jpeg",
+      "/events/workshops/w28.jpeg",
+      "/events/workshops/w29.jpeg",
+      "/events/workshops/w30.jpeg",
+      "/events/workshops/w31.jpeg",
+      "/events/workshops/w32.jpeg",
+      "/events/workshops/w33.jpeg",
+      "/events/workshops/w34.jpeg",
+      "/events/workshops/w35.jpeg",
+      "/events/workshops/w36.jpeg",
+      "/events/workshops/w37.jpeg",
+      "/events/workshops/w38.jpeg",
+      "/events/workshops/w39.jpeg",
+      "/events/workshops/w40.jpeg",
+      "/events/workshops/w41.jpeg",
+      "/events/workshops/w42.jpeg",
+      "/events/workshops/w43.jpeg",
+      "/events/workshops/w44.jpeg",
+      "/events/workshops/w45.jpeg",    
+    ],
+  },
+  {
+    title: "Competitions",
+    images: [
+      "/events/competitions/c1.jpg",
+      "/events/competitions/c2.jpg",
+      "/events/competitions/c3.jpg",
+    ],
+  },
+  {
+    title: "Team Moments",
+    images: [
+      "/events/team/t1.jpg",
+      "/events/team/t2.jpg",
+      "/events/team/t3.jpg",
+    ],
+  },
 ];
 
 export default function EventsGallery() {
@@ -42,41 +114,41 @@ export default function EventsGallery() {
         </p>
       </section>
 
-      {/* GRID */}
-      <section className="py-16 px-6 container mx-auto">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* CATEGORY SECTIONS */}
+      {gallery.map((category, index) => (
+        <section key={index} className="py-16 px-6 container mx-auto">
 
-          {images.map((src, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.05 }}
-              className="group relative overflow-hidden rounded-2xl"
-            >
-              
-              {/* Image Frame */}
-              <div className="relative aspect-video overflow-hidden">
-                <Image
-                  src={src}
-                  alt="Event"
-                  fill
-                  className="object-cover group-hover:scale-105 transition duration-500"
-                />
-              </div>
+          <h2 className="text-2xl font-semibold mb-8">
+            {category.title}
+          </h2>
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4">
-                <p className="text-white text-sm">
-                  Cultural Event
-                </p>
-              </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            </motion.div>
-          ))}
+            {category.images.map((src, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.05 }}
+                className="group relative overflow-hidden rounded-2xl shadow-md"
+              >
 
-        </div>
-      </section>
+                <div className="relative aspect-video">
+                  <Image
+                    src={src}
+                    alt={category.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition duration-500"
+                  />
+                </div>
+
+              </motion.div>
+            ))}
+
+          </div>
+
+        </section>
+      ))}
 
     </main>
   );
